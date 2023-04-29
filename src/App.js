@@ -79,13 +79,28 @@ function App() {
     </div>
     <footer className="flex flex-col md:flex-row justify-between items-center p-6">
       <div className="flex flex-row justify-center md:justify-start space-x-4">
-        <a href="https://www.linkedin.com/in/ernesti-sario-010b6a214/" className="text-2xl border-2 border-transparent hover:bg-pink-900 p-2" target="_blank">
+        <a 
+        href="https://www.linkedin.com/in/ernesti-sario-010b6a214/"
+        className="text-2xl border-2 border-transparent hover:bg-pink-900 p-2"
+        target="_blank"
+        rel="noreferrer"
+        >
           LinkedIn
         </a>
-        <a href="https://twitter.com/BitBeholder" className="text-2xl border-2 border-transparent hover:bg-pink-900 p-2" target="_blank">
+        <a 
+        href="https://twitter.com/BitBeholder"
+        className="text-2xl border-2 border-transparent hover:bg-pink-900 p-2"
+        target="_blank"
+        rel="noreferrer"
+        >
           Twitter
         </a>
-        <a href="https://github.com/BitBeholder" className="text-2xl border-2 border-transparent hover:bg-pink-900 p-2" target='_blank'>
+        <a 
+        href="https://github.com/BitBeholder"
+        className="text-2xl border-2 border-transparent hover:bg-pink-900 p-2"
+        target='_blank'
+        rel="noreferrer"
+        >
           GitHub
         </a>
       </div>
