@@ -1,18 +1,20 @@
 import React, { useState, useRef } from 'react';
 import './App.css';
 import './tailwind.css';
-import dancingGroot from './images/dancingGroot.gif';
 import cat1 from './images/cat1.gif';
 import cat2 from './images/cat2.gif';
+import cat4 from './images/cat4.gif';
+import cat5 from './images/cat5.gif';
+import cat6 from './images/cat6.gif';
 import catheadphones from './images/catheadphones.gif';
 import purpleBorders from './images/purpleBorders.gif';
 import backgroundImage from './images/01background.gif';
 import 'font-awesome/css/font-awesome.min.css';
 
 function App() {
-  const [gifSource, setGifSource] = useState(dancingGroot);
+  const [gifSource, setGifSource] = useState(cat6);
   const audioRef = useRef();
-  const [lastSelectedGift, setLastSelectedGift] = useState(dancingGroot);
+  const [lastSelectedGift, setLastSelectedGift] = useState(cat6);
 
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -25,19 +27,19 @@ function App() {
     setIsPlaying(!isPlaying);
   };
 
-  const partyGroot = () => {
-    if (gifSource === dancingGroot) {
+  const party = () => {
+    if (gifSource === cat6) {
       setLastSelectedGift(catheadphones)
       setGifSource(catheadphones);
     } else {
-      setLastSelectedGift(dancingGroot);
-      setGifSource(dancingGroot);
+      setLastSelectedGift(cat6);
+      setGifSource(cat6);
     }
   };
 
   function handleClick() {
     togglePlayback();
-    partyGroot();
+    party();
   };
   
 
@@ -67,6 +69,28 @@ function App() {
             onClick={() => window.open('https://lovely-cactus-b1128e.netlify.app/', '_blank')}
           >
             Project 2 - SendETH
+          </span>
+        </a>
+        <a className="text-white block" style={{ pointerEvents: 'none' }}>
+          <span
+            className="cursor-pointer inline-block p-2 mt-2"
+            style={{ pointerEvents: 'auto' }}
+            onMouseEnter={() => setGifSource(cat4)}
+            onMouseLeave={() => setGifSource(lastSelectedGift)}
+            onClick={() => window.open('https://ernestisario.com', '_blank')}
+          >
+            Project 3 - My Website
+          </span>
+        </a>
+        <a className="text-white block" style={{ pointerEvents: 'none' }}>
+          <span
+            className="cursor-pointer inline-block p-2 mt-2"
+            style={{ pointerEvents: 'auto' }}
+            onMouseEnter={() => setGifSource(cat5)}
+            onMouseLeave={() => setGifSource(lastSelectedGift)}
+            onClick={() => window.open('https://eth-price-prediction.onrender.com/', '_blank')}
+          >
+            Project 4 - ETH Price Prediction
           </span>
         </a>
       </div>
