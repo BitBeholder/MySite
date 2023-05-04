@@ -131,6 +131,9 @@ function App() {
       <p className="text-xl mt-4 md:mt-0">ernesti.sario@aaltoes.com</p>
     </footer>
       <audio ref={audioRef} src="Brutalismus3000.mp3" preload="auto"></audio>
+      <span className="press-here-text">
+        Press here <span className="arrow" role="img" aria-label="right-arrow">⇨</span>
+      </span>
       <button
         onClick={handleClick} 
         className='text-2xl p-4 md:p-8 absolute top-4 right-4'
