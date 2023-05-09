@@ -90,7 +90,8 @@ function App() {
             onMouseLeave={() => setGifSource(lastSelectedGift)}
             onClick={() => window.open('https://eth-price-prediction.onrender.com/', '_blank')}
           >
-            Project 4 - ETH Price Prediction
+            Project 4 - ETH Price Prediction 
+            <br />(the host is very slow)
           </span>
         </a>
       </div>
